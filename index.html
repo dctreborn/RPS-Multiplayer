@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RPS PvP</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/af.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1>Rock Paper Scissors PvP</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-6" id="player1">
+				<div class="panel panel-default">
+					<div class="panel-heading" id="p1-name">Player 1</div>
+					<div class="panel-body" id="p1-rps"></div>
+					<div class="well" id="p1-score"></div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6" id="player2">
+				<div class="panel panel-default">
+					<div class="panel-heading" id="p2-name">Player 2</div>
+					<div class="panel-body" id="p2-rps"></div>
+					<div class="well" id="p2-score"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="well" id="chat-history">test</div>
+						<textarea name="chat" id="chat-box" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
